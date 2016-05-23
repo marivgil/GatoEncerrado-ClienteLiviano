@@ -1,3 +1,17 @@
+body {
+	font-family:"Roboto",Helvetica,Arial,sans-serif;
+	font-size:15px;
+	line-height:1.42857143;
+	color:#333;
+	background:#f7f5f5;
+	margin:0
+}
+
+.container {
+	margin:0 auto;
+	padding:0 15px
+}
+
 .submit_n {
 	border:1px solid #b32d01;
 	height:40px;
@@ -27,3 +41,16 @@
 	padding-bottom: 19px;
 	border-bottom: 1px solid #e5e5e5;
 }
+
+.email_psw {
+	display:table-cell;
+	vertical-align:top;
+	padding:4% 5% 2%;
+	text-align:right;
+	width:30%
+}
+.campo {
+	display:table-cell;
+	vertical-align:middle;
+	padding:2% 5%;
+	width:70%
