@@ -1,5 +1,5 @@
 'use strict';
-angular.module('laberintosApp', ["ui.router"])
+angular.module('laberintosApp', ['ui.router'])
 
 
 

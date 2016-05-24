@@ -54,3 +54,58 @@ body {
 	vertical-align:middle;
 	padding:2% 5%;
 	width:70%
+}
+
+.box_b {
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
+}
+
+.box_a{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.box{
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 0;
+    overflow: auto;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+
+.medidas_footer {
+ 	margin: 2% auto;
+    margin-top: 2%;
+    margin-right: auto;
+    margin-bottom: 2%;
+    margin-left: auto;
+	width: 450px;
+}
+
+.ventana_login {
+ 	margin: 2% auto;
+    margin-top: 2%;
+    margin-right: auto;
+    margin-bottom: 2%;
+    margin-left: auto;
+	width: 390px;
+}
+
+.table_datos {
+    display: table;
+    width: 100%;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    box-sizing: border-box;
+}
+

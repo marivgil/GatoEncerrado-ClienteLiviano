@@ -5,23 +5,26 @@
 	<meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1.0">
 	
 	<!-- AANGULAAR -->
-	<script src="lib/angular.js"></script>
-	<script src="lib/jquery.js"></script>
+	<script src="node_modules/angular/angular.js"></script>
+	<script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modeules/angular-ui-router/release/angular-ui-router.min.js"></script>
 
 	<!-- BOOTSTRAP -->
-	<link href="bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" media="screen">
-	<script src="bootstrap-3.3.5/js/bootstrap.min.js"></script>
+	<!-- <link href="node_modules/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen"> -->
+	<script src="node_modules/bootstrap/js/bootstrap.min.js"></script>
+  <link href="netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
 	
 	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="css/app.css"/>
+	<link rel="stylesheet" type="text/css" href="app/css/app.css"/>
 	
 	<!-- JS -->
-	<script src="js/app.js"></script>  
-	<script src="js/directives.js"></script>
+	<script src="app/js/app.js"></script>  
+	<script src="app/js/directives.js"></script>
 
 </head>
 
 <body>
+	<section class="ventana_login">
 	<div >
 		<header>
 			<div align="center" class="header">
@@ -30,12 +33,13 @@
 		</header>
 	</div>
 	<div class="container">
-    	<div class="col-md-12 text-center">
-        	<header class="col-md-12 text-center">
+    	<div class="col-md-12 text-center ">
+        	<header class="col-md-4 text-center">
                	<h4>Acceso para usuarios registrados</h4>
             </header>
-            
-            <div class="col-md-8" >
+        </div>
+        <div>
+            <div class="col-md-4 box table-datos" >
             	<ul id="nomUsuario" class="">
                		<li class="email_psw">Usuario</li>
                    	<li class="campo">
@@ -51,18 +55,22 @@
                     </li>
                	</ul>
             </div>
-   
-            <div class="col-md-12 text-center">
+           
+        </div>
+
+        
+
+    </div>
+    <div class="col-md-8 text-center">
                	<input type="submit" value="Entrar" class="pd2 submit_n" />
                	<!-- aca si la contraseña es valida, mandar al lobby(mpa) o cambiar a la parte lobby(spa), aunque no lo tengo muy claro. Vi una directiva que era ng-if o algo asi. -->
-            </div>
-                
-        </div>
-                
-        <p>Si no estás registrado en GatoEncerrado <a href="/Registrar/">registrate aquí</a></p>
+
     
-    </div>
-  
+                
+        <div class="col-md-4 text-center">
+        Si no estás registrado en GatoEncerrado <a href="/Registrar/">registrate aquí</a>
+    	</div>
+  	</section>
 </body>
 
 <footer-info><footer-info/>
