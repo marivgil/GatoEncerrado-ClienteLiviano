@@ -1,6 +1,7 @@
 'use strict';
-angular.module('laberintosApp', ['ui.router'])
+// angular.module('laberintosApp', ['ui.router','vAccordion', 'ngAnimate'])
 
+var lab = angular.module('laberintosApp', ['ui.router','ngAnimate', 'ui.bootstrap','vAccordion']);
 
 
 // angular.module('laberintosApp', ['ngRoute']);

@@ -1,0 +1,36 @@
+<section class="ventana_login">
+	<div class="container">
+    <div class="col-md-12 text-center ">
+      <header class="col-md-4 text-center">
+        <h4>Acceso para usuarios registrados</h4>
+      </header>
+    </div>
+  
+    <div>
+      <div class="col-md-4 box table-datos" >
+        <ul id="nomUsuario" class="">
+          <li class="email_psw">Usuario</li>
+        	<li class="campo">
+            <input name="usuario" type="text" data-rule-required="true" class="" data-msg-required="Introducí tu usuario" />
+          </li>
+        </ul>
+                
+        <ul id="passw" class="campo">
+        	<li class="email_psw">Contraseña</li>
+	        <li class="campo">
+    	        <input name="pwd" type="password" id="pwd" class="" data-rule-required="true" data-msg-required="Introducí tu clave" />
+              <span> <small> ¿Has olvidado tu clave?</small></span>
+          </li>
+        </ul>
+      </div>       
+    </div>
+  </div>
+    
+  <div class="col-md-8 text-center">
+   	<input type="submit" value="Entrar" class="pd2 submit_n" />
+      <!-- aca si la contraseña es valida, mandar al lobby(mpa) o cambiar a la parte lobby(spa), aunque no lo tengo muy claro. Vi una directiva que era ng-if o algo asi. -->
+    <div class="col-md-4 text-center">
+        Si no estás registrado en GatoEncerrado <a href="/Registrar/">registrate aquí</a>
+    </div>
+  </div>
+</section>

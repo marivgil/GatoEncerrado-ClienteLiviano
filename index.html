@@ -2,77 +2,185 @@
 <html lang="es" ng-app="laberintosApp">
 <head>
 	<title>Aca hay gato encerrado..</title>
-	<meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1.0">
-	
+  <meta name="viewport" charset="UTF-8" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">	
 	<!-- AANGULAAR -->
 	<script src="node_modules/angular/angular.js"></script>
 	<script src="node_modules/jquery/dist/jquery.js"></script>
-  <script src="node_modeules/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
 
 	<!-- BOOTSTRAP -->
-	<!-- <link href="node_modules/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen"> -->
-	<script src="node_modules/bootstrap/js/bootstrap.min.js"></script>
-  <link href="netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" media="screen">
+	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 	
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="app/css/app.css"/>
 	
-	<!-- JS -->
-	<script src="app/js/app.js"></script>  
-	<script src="app/js/directives.js"></script>
-
 </head>
 
-<body>
-	<section class="ventana_login">
-	<div >
-		<header>
-			<div align="center" class="header">
-				<h1>El Gato encerrado</h1>
-			</div>		
-		</header>
-	</div>
-	<div class="container">
-    	<div class="col-md-12 text-center ">
-        	<header class="col-md-4 text-center">
-               	<h4>Acceso para usuarios registrados</h4>
-            </header>
-        </div>
-        <div>
-            <div class="col-md-4 box table-datos" >
-            	<ul id="nomUsuario" class="">
-               		<li class="email_psw">Usuario</li>
-                   	<li class="campo">
-                   		<input name="usuario" type="text" data-rule-required="true" class="	cm-3" data-msg-required="Introducí tu usuario" />
-               		</li>
-               	</ul>
-                
-               	<ul id="passw" class="campo">
-               		<li class="email_psw">Contraseña</li>
-	                <li class="campo">
-    	               	<input name="pwd" type="password" id="pwd" class="cm-3" data-rule-required="true" data-msg-required="Introducí tu clave" />
-                       	<span> <small> ¿Has olvidado tu clave?</small></span>
-                    </li>
-               	</ul>
-            </div>
-           
+  <body>
+
+    <!-- Aca agregar el controller de LOGIN para poner el nombre de usuario arriba -->  
+    <nav class="navbar navbar-default fondoBlanco fixed">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#"><img class="" src="app/images/gato2.jpeg" width=60px height=60px></a>
         </div>
 
-        
+        <div class="titulo">
+          <h1>
+            El Gato Encerrado
+          </h1>
+        </div>  
 
-    </div>
-    <div class="col-md-8 text-center">
-               	<input type="submit" value="Entrar" class="pd2 submit_n" />
-               	<!-- aca si la contraseña es valida, mandar al lobby(mpa) o cambiar a la parte lobby(spa), aunque no lo tengo muy claro. Vi una directiva que era ng-if o algo asi. -->
+        <div class="navbar navbar-right navbar-right-user">
+          <h5><i><b>Usuario:</b></i></h5>
+        </div>
+      </div>
+    </nav>
 
+    <!-- en teoria, aca adentro va el cod de laberintos -->
     
-                
-        <div class="col-md-4 text-center">
-        Si no estás registrado en GatoEncerrado <a href="/Registrar/">registrate aquí</a>
-    	</div>
-  	</section>
-</body>
+    <section class="main container-fluid">
+      <div class="body-position">
+        <div class="row">
+          <div class="col-xs-12 col-md-3">
+            <div class="panel-group" id="acordion" role="tablist">
+              <div class="panel panel-default">
+                <div class="panel-heading" id="heading1" role="tab">
+                  <h6 class="panel-title">
+                    <a href="#collapse1" data-toggle="collapse" data-parent="#acordion">
+                      Nombre de laberinto
+                    </a>
+                  </h6>
+                </div>
 
-<footer-info><footer-info/>
+                <div id="collapse1" class="panel-collapse collapse in">
+                  <div class="panel-body">
+                    datos del laberinto
+                  </div>
+                </div>
+              </div>  
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-9">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                JUGAR  
+              </div>
+              <div class="panel-body">aca va el codigo de <br> jugar <br> SELECCIONA UN LABERINTO!!!!!
+                
+              </div>  
+            </div>
+          </div>
+        </div>    
+
+        <div class="container">
+          <div class="well-lg">
+            <div ui-view></div>
+          </div>  
+        </div>
+      </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+  <!-- <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+              <h2>Accordion prueba</h2> <hr>
+              <div class="panel-group" id="acordion">
+                  <div class="panel panel-default">
+                      <div class="panel-heading">
+                          <h4 class="panel-title">
+                              <a href="#section1" data-toggle="collapse" data-parent="#acordion">
+                                  LABERINTOS 1      
+                              </a>
+                          </h4>
+                      </div>
+                      
+                      <div id="section1" class="panel-collapse collapse">
+                          <div class="panel-body">
+                              aca va el codigo del routeo de los laberintos      
+                          </div>
+                      </div>
+                  </div>  
+               </div>
+          </div>
+      </div>
+    </div> -->
+
+    <!-- <footer-info><footer-info/> -->
+
+      <!-- JS -->
+      <script src="app/js/app.js"></script>  
+      <script src="app/js/directives.js"></script>
+      <script src="app/js/routes.js"></script>
+      <script>
+        $('.collapse').collapse()
+      </script>
+
+    </body>
 
 </html>
+
+
+
+
+<!-- ////////////////////////////////////////////////////////////////////// -->
+<!-- <div class="continer">
+    <div class="row">
+      <div class="col-md-12">
+        
+
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">ngrepeat=
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Collapsible Group Item #1
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Collapsible Group Item #2
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Collapsible Group Item #3
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+ -->

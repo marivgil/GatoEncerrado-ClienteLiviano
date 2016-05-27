@@ -5,7 +5,7 @@ angular.module('laberintosApp', [])
 
 .directive('footerInfo', function() {
     return {
-    	restrict : 'AE',
+    	restrict : 'E',
     	templateUrl: 'app/partials/footer-info.html'
     }
 });
