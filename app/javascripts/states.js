@@ -17,4 +17,14 @@ gatoEncerrado.config(function($stateProvider, $urlRouterProvider){
                 }
             }
         })
+        .state('app.laberinto', {
+            url: '/laberinto/:id',
+            templateUrl: 'views/laberinto',
+            controller: 'LaberintoCtrl',
+            resolve: {
+                resolveResponse: function($stateParams, laberintosService) {
+                    return laberintosService.traerLaberinto(1, $stateParams.id);
+                }
+            }
+        })
 });

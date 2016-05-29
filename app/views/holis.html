@@ -2,8 +2,10 @@
     <div>
         <h1>Laberintos</h1>
         <div ng-repeat="laberinto in laberintos">
-            <p>{{laberinto.nombre}}</p>
+            <a ui-sref="app.laberinto({id: laberinto.id})">{{laberinto.nombre}}</a>
         </div>
+    </div>
+    <div ui-view>
     </div>
 </div>
 
