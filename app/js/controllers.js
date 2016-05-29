@@ -6,16 +6,15 @@
 //     $scope.apellidos= "Flores";
 // });
 // app.controller("laberintosController", function (LaberintosFactory){    
-app.controller("laberintosController", function ($scope){    
-  
-    $scope.nombre = "mariu";
-    $scope.userTest = {
-        name: "jose"
-    }
+app.controller('LaberintosController', function() {
+	'use strict';
 
-
-
+	var self = this;
+	self.user = {
+		name : "pepe"
+	};
 });
+
 // 'use strict';
 //     var self = this;
 //     self.estaDesplegado = false;

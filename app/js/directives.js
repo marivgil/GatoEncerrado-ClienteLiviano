@@ -1,11 +1,6 @@
-'use strict';
-
-angular.module('laberintosApp', [])
-
-
-.directive('footerInfo', function() {
+app.directive('footerInfo', function() {
     return {
     	restrict : 'E',
-    	templateUrl: 'app/partials/footer-info.html'
+    	templateUrl: 'partials/footer-info.html'
     }
 });
