@@ -1,3 +1,5 @@
 gatoEncerrado.controller("LaberintosController", ['$scope', 'resolveResponse', 'laberintosService', function ($scope, resolveResponse, laberintosService) {
-    $scope.laberintos = resolveResponse.data;
+    var data = resolveResponse.data;
+    console.log(data);
+    $scope.laberintos = data;
 }]);
