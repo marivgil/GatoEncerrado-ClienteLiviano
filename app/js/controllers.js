@@ -22,9 +22,11 @@ lab.controller('LaberintosCtrl', function($scope, $resource, $timeout, Laberinto
     };
 
     self.actualizarLaberintos = function(idusuario) {
-        Laberintos.query(idusuario,function(data) {
+        Laberintos.query(
+            idusuario,function(data) {
             self.laberintos = data;
-        }, errorHandler);
+            }, 
+            errorHandler);
     };
 
     self.errors = [];
@@ -37,7 +39,7 @@ lab.controller('LaberintosCtrl', function($scope, $resource, $timeout, Laberinto
         self.notificarError(error.data);
     }
 
-}]);
+});
 
 // app.controller('LaberintoActual', ['$scope', function($scope, $resource, $timeout, $controller, cfpLoadingBar, Laberintos){
 
