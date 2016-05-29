@@ -1,0 +1,24 @@
+{
+  "name": "GatoEncerrado",
+  "version": "0.0.1",
+  "description": "Aplicación Para jugar con los laberintos",
+  "dependencies": {
+    "angular": "^1.5.6",
+    "bootstrap": "^3.3.6",
+    "angular-ui-router": "^0.3.0",
+    "jQuery": "^2.2.4"
+  },
+  "homepage": "https://github.com/marivgil/GatoEncerrado-ClienteWeb",
+  "authors": [
+    "agustin <agutin@agutin-N56VJ>"
+  ],
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
