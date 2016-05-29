@@ -1,5 +1,4 @@
-'use strict'
-lab.config(function ($stateProvider, $urlRouterProvider) {
+app.config(function ($stateProvider, $urlRouterProvider) {
 
   $urlRouterProvider.otherwise("/");
 
