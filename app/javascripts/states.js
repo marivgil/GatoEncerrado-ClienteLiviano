@@ -9,7 +9,7 @@ gatoEncerrado.config(function($stateProvider, $urlRouterProvider){
         })
         .state('app.laberintos', {
             url: '/laberintos',
-            templateUrl: 'views/holis',
+            templateUrl: 'views/laberintos',
             controller: 'LaberintosController',
             resolve: {
                 resolveResponse: function(laberintosService){
@@ -17,10 +17,10 @@ gatoEncerrado.config(function($stateProvider, $urlRouterProvider){
                 }
             }
         })
-        .state('app.laberinto', {
+        .state('app.laberintos.laberinto', {
             url: '/laberinto/:id',
             templateUrl: 'views/laberinto',
-            controller: 'LaberintoCtrl',
+            controller: 'LaberintoController',
             resolve: {
                 resolveResponse: function($stateParams, laberintosService) {
                     return laberintosService.traerLaberinto(1, $stateParams.id);

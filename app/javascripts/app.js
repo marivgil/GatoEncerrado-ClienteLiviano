@@ -1,6 +1,10 @@
 var gatoEncerrado = angular.module('gatoEncerrado',[
-    "ui.router"
-  ]);
+    "ui.router",
+    'mgcrea.ngStrap',
+    'mgcrea.ngStrap.modal',
+    'ngAnimate'
+
+]);
 
 gatoEncerrado.config(['$httpProvider', function($httpProvider) {
     $httpProvider.interceptors.push('CargandoService');
