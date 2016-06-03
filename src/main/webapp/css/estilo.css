@@ -1,3 +1,47 @@
+.box_landing .box_form .content_form {
+    float: right;
+    width: 48%;
+    background: #fff;
+        background-color: rgb(255, 255, 255);
+        background-image: none;
+        background-repeat: repeat;
+        background-attachment: scroll;
+        background-position: 0% 0%;
+        background-clip: border-box;
+        background-origin: padding-box;
+        background-size: auto auto;
+    color: #333;
+    padding: 15px;
+        padding-top: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+    border-radius: 3px;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        border-bottom-left-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 0 6px 0 rgba(0,0,0,0.6);
+    -moz-box-shadow: 0 0 6px 0 rgba(0,0,0,0.6);
+}
+
+.box_landing .box_form .content_form .form_reg {
+    float: left;
+    margin: 0;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+    padding: 0;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+}
+
 .body-position{
     margin: 0 auto;
     margin-top: 100px;
@@ -5,6 +49,14 @@
     margin-bottom: 0px;
     margin-left: auto;  
 	
+}
+
+.position_logo{
+    margin: 0 auto;
+    margin-top: auto;
+    margin-right: 25% auto ;
+    margin-left: 25% auto;
+ 
 }
 
 .navbar-right-user{
@@ -59,6 +111,21 @@ body {
 .container {
 	margin:0 auto;
 	padding:0 15px
+    margin-right: auto ;
+    margin-right: 200px auto ;
+}
+
+.btn_position {
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-right: 30% ;
+    margin-left: 25%;
+}
+
+.registrar_position{
+    margin-top: 5%;
+    margin-right: auto;
+    margin-left: 10% auto;
 }
 
 .submit_n {
@@ -89,11 +156,11 @@ body {
 
 .medidas_footer {
     margin: 2% auto;
-    margin-top: 2%;
+    margin-top: 10%;
     margin-right: auto;
     margin-bottom: 2%;
     margin-left: 25%;
-    width: 450px;
+    width: 500px;
 }
 
 .row, h2 {
@@ -142,12 +209,9 @@ body {
 
 .ventana_login {
  	margin: 2% auto;
-    margin-top: 2%;
+    margin-top: 10%;
     margin-right: auto;
     margin-bottom: 2%;
     margin-left: auto;
-	width: 390px;
+	width: 450px;
 }
-
-
-
