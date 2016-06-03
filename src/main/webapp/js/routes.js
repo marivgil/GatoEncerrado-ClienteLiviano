@@ -1,19 +1,19 @@
+
 app.config(function ($stateProvider, $urlRouterProvider) {
 
   $urlRouterProvider.otherwise("/");
 
   $stateProvider
 
-    .state('pruebaUno', {
+    .state('inicio', {
       url: "/",
-      templateUrl: "app/partials/prueba_uno.html"
-      //controller: "AgregarTareaController as tareasCtrl"
+      templateUrl: "partials/seleccionaLaberinto.html",
     })
-
-    // .state('prueba2', {
-    //   //url: "/tarea/:id",
-    //   templateUrl: "partials/prueba2.html",
-    //   //controller: "EditarTareaController as editarCtrl"
-    // })
-
+/*
+    .state('editarTarea', {
+      url: "/tarea/:id",
+      templateUrl: "partials/editar_tarea.html",
+      controller: "EditarTareaController as editarCtrl"
+    })
+*/
 });
