@@ -1,4 +1,4 @@
-gatoEncerrado.controller("GatoController", function ($scope, laberintosService, $state) {
+gatoEncerrado.controller("GatoController", function ($scope, laberintosService, $state, $stateParams) {
     
     var self = this;
     self.user = {
@@ -17,8 +17,9 @@ gatoEncerrado.controller("GatoController", function ($scope, laberintosService, 
             console.log(error);
         });
 
-    $scope.cambiarDePantalla = function() {
-        $state.go("segundoPanel");
+
+    $scope.cambiarLaberinto = function(id) {
+        self.Laberintoid = id;
     };
 
     $scope.cambiarALaberintoSeleccionado = function() {

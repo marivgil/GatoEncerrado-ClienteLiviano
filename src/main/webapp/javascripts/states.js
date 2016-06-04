@@ -24,7 +24,7 @@ gatoEncerrado.config(function ($stateProvider, $urlRouterProvider) {
     })
 
     .state('laberintoSeleccionado', {
-      url: "/laberintoSeleccionado",
+      url: "/laberintoSeleccionado/:id",
       templateUrl: "partials/laberintoSeleccionado.html",
       controller: "GatoController"
     })
