@@ -24,6 +24,10 @@ gatoEncerrado.controller("GatoController", function ($scope, laberintosService, 
         $state.go("laberintoSeleccionado");
     }
 
+    $scope.jugarEnHabitacion = function() {
+        $state.go("habitacion");
+    }
+
 	// self.laberintos = [
  //        {
  //        nombreLaberinto:"Casa de agus",

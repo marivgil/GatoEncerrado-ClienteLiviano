@@ -19,7 +19,7 @@ gatoEncerrado.config(function ($stateProvider, $urlRouterProvider) {
 
     .state('habitacion', {
       url: "/habitacion",
-      templateUrl: "partials/holis.html",
+      templateUrl: "partials/habitacion.html",
       controller: "GatoController"
     })
 
