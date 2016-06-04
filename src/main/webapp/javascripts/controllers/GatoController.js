@@ -6,6 +6,7 @@ gatoEncerrado.controller("GatoController", function ($scope, laberintosService, 
     };
     
     self.Jugador= {id:1};
+    self.Laberinto= {id:11};
 
     laberintosService.obtenerLaberintos(self.Jugador.id)
         .success(function(data){
@@ -27,6 +28,15 @@ gatoEncerrado.controller("GatoController", function ($scope, laberintosService, 
     $scope.jugarEnHabitacion = function() {
         $state.go("habitacion");
     }
+
+    laberintosService.traerLaberinto(self.Jugador.id, self.Laberinto.id)
+        .success(function(data){
+                self.laberintoSeleccionado = data;
+                console.log (data);
+        })
+        .error(function(error) {
+            console.log(error);
+        });  
 
 	// self.laberintos = [
  //        {
