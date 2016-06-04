@@ -1,12 +1,5 @@
 gatoEncerrado.controller("LaberintosController", ['$scope', 'resolveResponse', 'laberintosService', 
 	function ($scope, resolveResponse, laberintosService) {
-    // $scope.laberintos = resolveResponse.data;
-    $scope.obtenerLaberintos = function() {
-        laberintosService.obtenerLaberintos(function(data) {
-            self.libros = data;
-            self.noLeidos.autores = obtenerAutores(data);       
-        }, errorHandler);
-    };
 
     self.idJugdor= {id:1};
 
@@ -18,9 +11,3 @@ gatoEncerrado.controller("LaberintosController", ['$scope', 'resolveResponse', '
     };
 
 }]);
-
-//  +gatoEncerrado.controller("LaberintoController", ['$scope', 'resolveResponse', function ($scope, resolveResponse) {
-// +    var data = resolveResponse.data;
-// +    console.log(data);
-// +    $scope.laberinto = data;
-// +}]);
