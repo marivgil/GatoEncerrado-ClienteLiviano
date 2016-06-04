@@ -20,8 +20,8 @@ gatoEncerrado.controller("GatoController", function ($scope, laberintosService, 
         $state.go("segundoPanel");
     };
 
-    $scope.cambiarAPrueba = function() {
-        $state.go("prueba");
+    $scope.cambiarALaberintoSeleccionado = function() {
+        $state.go("laberintoSeleccionado");
     }
 
 	// self.laberintos = [

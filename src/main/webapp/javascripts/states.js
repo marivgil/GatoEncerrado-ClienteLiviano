@@ -10,11 +10,6 @@ gatoEncerrado.config(function ($stateProvider, $urlRouterProvider) {
       templateUrl: "partials/login.html",
       controller: "LoginController"
     })
-
-    // .state('homeIzq', {
-    //   url: "/homeIzq",
-    //   templateUrl: "partials/panelIzq.html",
-    //   controller: "GatoController"
   
     .state('homeDer', {
       url: "/homeDer",
@@ -28,9 +23,9 @@ gatoEncerrado.config(function ($stateProvider, $urlRouterProvider) {
       controller: "GatoController"
     })
 
-    .state('prueba', {
-      url: "/prueba",
-      templateUrl: "views/holis.html",
+    .state('laberintoSeleccionado', {
+      url: "/laberintoSeleccionado",
+      templateUrl: "partials/laberintoSeleccionado.html",
       controller: "GatoController"
     })
 
