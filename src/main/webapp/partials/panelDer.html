@@ -1,19 +1,15 @@
-	<!-- <div class="panel panel-default">
-        <div class="panel-heading"> Selecciona Laberinto </div>
-        <div>
-        	<a href="#"><img class="" src="images/Flecha-Izquierda.gif" width=60px height=60px></a>
-	    </div>
-	 -->
-      	<!-- <button ng-click="cambiarDePantalla()"> Cambiar Panel</button> -->
 
+<div class="navbar navbar-default fondoBlanco"  ng-include="'views/navBarLobby.html'" ng-controller="LoginController as logCtrl"></div>
 
 <div class="row body-position main container-fluid">
-         <div class="col-xs-12 col-md-3" ng-include="'partials/panelIzq.html'" ng-controller="GatoController as appCont">
-         </div>
-         <div class="col-md-9">
-			FUNCIONA <br> <br> <br> <br> FUNCIONA!!
-			
-         </div>
+  <div class="col-xs-12 col-md-3" ng-include="'partials/panelIzq.html'" ng-controller="GatoController as appCont">
+  </div>
+    <div class="col-md-9">
+      <div class="panel panel-default">
+        <div class="panel-heading"> Selecciona Laberinto </div>
+      </div>
+      <a href="#"><img class="center" src="images/Flecha-Izquierda.gif" width=60px height=60px></a>
+    </div>	
 </div>
 
 

@@ -1,12 +1,11 @@
   
-    
+    <!--ACORDION-->
       <div class="panel-group" id="acordion" role="tablist">
         <div class="panel panel-default" ng-repeat="laberinto in appCont.laberintos">
           <div class="panel-heading" id="heading1" role="tab">
             <h6 class="panel-title">
               <a href="#{{laberinto.id}}" data-toggle="collapse" data-parent="#acordion">
                 nombre: {{laberinto.nombre}}
-                <!-- {{appCont.user.name}} -->
               </a>
             </h6>
           </div>
@@ -16,7 +15,6 @@
               descripcion: <img class="" src="{{laberinto.pathImagen}}" width=100px height=100px ng-click="cambiarAPrueba()"></a>
               <div class="col-xs-11 col-md-11">
                 <button type="button" class="btn btn-primary btn-sm"  aria-hidden="true"  ng-click="cambiarAPrueba()">Jugar</button>
-                <!-- ui-sref='partials/panelDer.html' -->
               </div>
               
             </div>
